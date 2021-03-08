@@ -1,15 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div>
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <a-button type="primary">Button</a-button> -->
+    <HomeOutlined spin  />
+    <SmileTwoTone /> 
+    <HeartTwoTone twoToneColor="#eb2f96" />
+</div>
+
+
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import {
+  HomeOutlined, 
+  SmileTwoTone,
+  HeartTwoTone 
+} from '@ant-design/icons-vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    HomeOutlined,
+    SmileTwoTone,
+    HeartTwoTone 
   }
 }
 </script>
